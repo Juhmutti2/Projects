@@ -1,6 +1,6 @@
 Asennusohjeet Komentokehoitteella ja Powershellillä. Vaihtoehtoinen suoritustapa kts yst kohta 1.1 
 
-1. Lataa Ääni -kansio,Kuvat -kansio, sekä Ruttunen.py ja tallenna ne haluamaasi hakemistoon. Polun tulisi näyttää tältä siinä tapauksessa, että olet tallentanut materiaalin kansioon "Ruttunen":
+1. Lataa Ääni -kansio,Kuvat -kansio, sekä Ruttunen.py ja tallenna ne haluamaasi hakemistoon. Lataaminen tapahtuu painamalla vihreää Code -nappia ja valitsemalla vaihtoehdon "Download ZIP". Polun tulisi näyttää tältä siinä tapauksessa, että olet tallentanut materiaalin kansioon "Ruttunen":
 
 Ruttunen
 -Ruttunen.py

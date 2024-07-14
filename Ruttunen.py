@@ -286,9 +286,11 @@ class Peli:
             "3. Ammu vasemmalle painamalla shift + välilyönti.",
             "4. Ammu oikealle painamalla ctrl + välilyönti.",
             "5. Kerää BFG ampumalla harmaata vihollista. Kylvä tuhoa painamalla b:tä.",
-            "6. Väistä vihollisia ja ammu niitä saadaksesi pisteitä.",
-            "7. Käytössäsi on kehitysversio. Välipomo on violetti (10 osumaa) ja loppuvastus on pinkki (20 osumaa)."
-            "8. Peli on kehitysvaiheessa grafiikoiden osalta. Pelitoiminnot, äänet, musiikit, tekstit, pelitapahtumat ja muu ohjelman toiminta on tarkoitettua. Vaikeusastetta ei ole säädetty, peli on helpohko."
+            "6. Väistä vihollisia ja ammu niitä saadaksesi pisteitä. Välipomo on violetti (10 osumaa),",
+            "loppuvastus on pinkki (20 osumaa).",
+            "7. Käytössäsi on kehitysversio. Olemassa olevat toiminnot, tapahtumat, äänet, musiikit sekä tekstit",
+            "ovat tarkoitettuja. Peliin on tarkoitus lisätä myöhemmin ominaisuuksia.", 
+            "Vaikeusastetta ei ole säädetty, peli on helpohko."
         ]
         for i, ohje in enumerate(ohjeet):
             ohje_teksti = ohje_fontti.render(ohje, True, self.VALKOINEN)

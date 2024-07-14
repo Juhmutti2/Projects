@@ -292,6 +292,7 @@ class Peli:
             "ovat tarkoitettuja. Peliin on tarkoitus lisätä myöhemmin ominaisuuksia.", 
             "Vaikeusastetta ei ole säädetty, peli on helpohko."
         ]
+        
         for i, ohje in enumerate(ohjeet):
             ohje_teksti = ohje_fontti.render(ohje, True, self.VALKOINEN)
             self.naytto.blit(ohje_teksti, (20, 50 + i * 40))
@@ -372,10 +373,10 @@ class Peli:
             self.taustavari = self.KELTAINEN
             self.xcom_aani.stop()
             self.vaihda_tasomusiikki(self.sor1_aani)
-        elif self.robotti_lkm >2 and not self.bfg:
+        elif self.robotti_lkm %30==0 and self.robotti_lkm !=0 and not self.bfg:
             self.bfg = [x, 0, 0]
             self.bfg_ajastin = pygame.time.get_ticks() + 5000
-        elif self.robotti_lkm % 50 == 0 and not self.valiloppari:
+        elif self.robotti_lkm % 50 == 0 and self.robotti_lkm !=0 and not self.valiloppari:
             self.valiloppari = [x, 0, 10]
         elif self.robotti_lkm == 40:
             self.vihollisen_pudotusnopeus += 0.25
@@ -403,7 +404,7 @@ class Peli:
         self.tasomusiikit = uusi_musiikki
         self.tasomusiikit.play(loops=-1)
 
-    def peli_silmukka(self):
+    def suorita(self):
         while True:
             self.peli_kaynnissa = self.paavalikko()
             self.intro_kaynnissa = self.peli_kaynnissa
@@ -612,13 +613,16 @@ class Ammus:
             self.x -= 10
         elif self.suunta == "oikea":
             self.x += 10
-        if self.y < 0 or self.x < 0 or self.x > 1200 - 200:  # päivitä pelialueen leveys
+        elif self.y < 0 or self.x < 0 or self.x > 1200 - 200:  
             self.tuhottu = True
         self.rect = pygame.Rect(self.x, self.y, 20, 10)
 
     def piirra(self, naytto):
         naytto.blit(self.kuva, (self.x, self.y))
 
-if __name__ == "__main__":
+def main():
     peli = Peli()
-    peli.peli_silmukka()
+    peli.suorita()
+
+if __name__ == "__main__":
+    main()

@@ -50,9 +50,9 @@ def print_builtin_functions():
 def main():
     while True:
         choice = input("Enter choice 1 = print every module / 2 = print builtin function info Y/N / 3 = Enter which modules you want info on. Input NOT case sensitive. / 4 = Quit: ").strip().lower()
-        if choice == '1' or choice:
+        if choice == '1':
             list_all_modules()
-        elif choice == '2' or choice:
+        elif choice == '2':
             print_builtin_functions()
         elif choice == '3':
             user_input = input("Enter the module names separated by spaces: ").strip().lower()

@@ -49,7 +49,7 @@ def print_builtin_functions():
 
 def main():
     while True:
-        choice = input("Enter choice 1 = print every module / 2 = print builtin function info Y/N / 3 = Enter which modules you want info on. Input NOT case sensitive. / 4 = Quit: ").strip().lower()
+        choice = input("Enter choice 1 = print every module / 2 = print built-in function info Y/N / 3 = Enter which modules you want info on. Input NOT case sensitive. / 4 = Quit: ").strip().lower()
         if choice == '1':
             list_all_modules()
         elif choice == '2':

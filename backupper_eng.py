@@ -7,7 +7,7 @@ The program also has an option to manually select the files to be saved.'''
 import os
 import shutil
 from datetime import datetime
-from tkinter import Tk, Button, Label, Listbox, filedialog
+from tkinter import Tk, Button, Listbox, filedialog
 
 class BackupApp:
     def __init__(self, root):

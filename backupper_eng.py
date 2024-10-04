@@ -1,6 +1,6 @@
-''' If you want all the files in the folder, remove 'and f.endswith('.py')' from line 37. BY DEFAULT, THE PROGRAM SAVES ALL FILES IN THE CURRENT FOLDER.
+''' If you want all the files in the folder, remove 'and f.endswith('.py')' from line 33. BY DEFAULT, THE PROGRAM SAVES ALL FILES IN THE CURRENT FOLDER.
 
-If you want specific file types, add as needed to line 37 'or f.endswith('.file_extension')'. These can be chained, e.g., 'or f.endswith('.py') or f.endswith('.js')'
+If you want specific file types, add as needed to line 33 'or f.endswith('.file_extension')'. These can be chained, e.g., 'or f.endswith('.py') or f.endswith('.js')'
 
 The program also has an option to manually select the files to be saved.'''
 

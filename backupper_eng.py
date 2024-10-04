@@ -13,8 +13,6 @@ class BackupApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Backup Program")
-        self.label = Label(root, text="Backed Up Files:")
-        self.label.pack()
         self.file_list = Listbox(root, width=175, height=25)
         self.file_list.pack()
         self.manual_backup_button = Button(root, text="Select Files", command=self.select_files)

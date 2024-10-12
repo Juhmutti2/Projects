@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Triathlon Records</title>
+</head>
+<body>
+    <h1>Triathlon Records</h1>
+    <ul>
+        {% for record in records %}
+            <li>{{ record.name }} - Swim: {{ record.swim }} - Cycle: {{ record.cycle }} - Run: {{ record.run }} - Total: {{ record.total }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

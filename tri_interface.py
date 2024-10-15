@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import scrolledtext, messagebox, filedialog
-import pandas as pd
 from tri_data_handling import FileManager
 from tri_analysis import analyze_data
 from tri_visualizations import create_visualizations
